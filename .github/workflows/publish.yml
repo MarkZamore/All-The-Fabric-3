@@ -1,0 +1,81 @@
+name: Publish All The Fabric 3 pack
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: atf3-pack-latest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Generate manifest and stage assets
+        run: python tools/generate_manifest.py --pack . --out dist --revision "$GITHUB_SHA"
+
+      - name: Self-check staged assets
+        run: python tools/generate_manifest.py --pack . --out dist --verify-only
+
+      - name: Publish pack-latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          # Recreate the rolling release from scratch. The launcher treats the
+          # release as incomplete until pack-manifest.json is present, so it is
+          # safe to delete and repopulate here.
+          gh release delete pack-latest --yes --cleanup-tag || true
+          git push origin :refs/tags/pack-latest || true
+          sleep 5
+
+          gh release create pack-latest \
+            --target "$GITHUB_SHA" \
+            --title "All The Fabric 3 pack" \
+            --notes "Rolling All The Fabric 3 pack release. Revision: $GITHUB_SHA"
+
+          upload_batch() {
+            local attempt
+            for attempt in 1 2 3; do
+              if gh release upload pack-latest "$@" --clobber; then
+                return 0
+              fi
+              echo "Upload batch failed (attempt $attempt/3)" >&2
+              if [ "$attempt" -lt 3 ]; then
+                sleep $((attempt * 15))
+              fi
+            done
+            echo "Upload batch failed after 3 attempts" >&2
+            return 1
+          }
+
+          batch=()
+          for f in dist/assets/*; do
+            batch+=("$f")
+            if [ "${#batch[@]}" -eq 40 ]; then
+              upload_batch "${batch[@]}"
+              batch=()
+            fi
+          done
+          if [ "${#batch[@]}" -gt 0 ]; then
+            upload_batch "${batch[@]}"
+          fi
+
+          # The manifest is uploaded LAST: its presence marks the release as
+          # complete and consumable for the launcher.
+          upload_batch dist/pack-manifest.json

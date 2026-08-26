@@ -1,0 +1,35 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_4749
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/assets/Gui/Loading_Screen/world_screen.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=505154%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=345154%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=425130%
+  action = vanilla_button_visibility_requirements
+}
+

@@ -1,0 +1,301 @@
+
+#General Config Section. See https://readme.firstdarkdev.xyz/simple-rpc/introduction/
+[general]
+	#The Application ID of the Discord App to use
+	applicationID = 915922978015961088
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen. ONLY AVAILABLE WHEN CLOTH CONFIG IS INSTALLED!
+	configScreen = false
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = true
+	#Internal Version Number. NO TOUCHY!
+	version = 16
+	updater = false
+
+#The Game Loading event
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Loading %mods% mods"
+	#The second line of text under the app name
+	state = "Minecraft %mcver%"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "pack-logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft: %mcver%"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "ampz_network"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "By TeamAMPZ"
+
+	#The buttons to display on Discord
+	[[init.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[init.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#The Main Menu event
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Browsing Title Screen"
+	#The seconds line of text under the app name
+	state = "Minecraft %mcver%"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "pack-logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft %mcver%"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "ampz_network"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "By TeamAMPZ"
+
+	#The buttons to display on Discord
+	[[main_menu.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[main_menu.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#The Server List event
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Looking for a server"
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "pack-logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mods% mods installed"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "ampz_network"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "By TeamAMPZ"
+
+	#The buttons to display on Discord
+	[[server_list.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[server_list.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#The Realms Screen event
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for a Realm"
+	#The second line of text under the app name
+	state = "Browsing Realms"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Join Game Event
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = ""
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "pack-logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "ampz_network"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "By TeamAMPZ"
+
+	#The buttons to display on Discord
+	[[join_game.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[join_game.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Dimension %world%"
+	#The second line of text under the app name
+	state = "Exploring %biome%"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "pack-logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mods% mods installed"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "ampz_network"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "All The Fabric 3 - %mcver%"
+
+	#The buttons to display on Discord
+	[[single_player.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[single_player.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#The Multi Player Event
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Connected to %servername%"
+	#The second line of text under the app name
+	state = "%players%/%maxplayers%"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "%servericon%"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dimension %world%"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "ampz_network"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Modpack by TeamAMPZ"
+
+	#The buttons to display on Discord
+	[[multi_player.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[multi_player.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#The Realms Game Event
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Playing on %realmname%"
+	#The second line of text under the app name
+	state = "Playing on a Realm"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	#The buttons to display on Discord
+	buttons = []
+
+#Fallback event for disabled events
+[generic]
+	#The first line of text under the app name
+	description = ""
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "unknown_world"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mods% mods installed"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "pack-logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "By TeamAMPZ"
+
+	#The buttons to display on Discord
+	[[generic.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+
+	[[generic.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+
+#Dimension Information Overrides
+[dimension_overrides]
+	#Allows you to override the displayed values for dimensions
+	enabled = true
+
+	#The Dimensions to override
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "Exploring %world%"
+		state = "Dimension %biome%"
+		largeImageKey = "overworld"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "Exploring %world%"
+		state = "Dimension %biome%"
+		largeImageKey = "the_nether"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "end_island"
+		description = "Exploring %world%"
+		state = "Dimension %biome%"
+		largeImageKey = "end_island"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "Exploring %world%"
+		state = "Dimension %biome%"
+		largeImageKey = "the_end"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_aether"
+		description = "Dimension %world%"
+		state = "Exploring %biome%"
+		largeImageKey = "the_aether_reborn"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "twilight_forest"
+		description = "Dimension %world%"
+		state = "Exploring %biome%"
+		largeImageKey = "twilight_forest"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+		buttons = []
+

@@ -1,0 +1,268 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_433
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  custom_menu_title = 
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  orientation = mid-centered
+  x = -65
+  action = movebutton
+  y = -37
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  width = 130
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  action = setbuttonlabel
+  value = Resume Game
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\Gui\pause_menu\button.png
+  backgroundnormal = config\fancymenu\assets\Gui\pause_menu\blank.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_feedback_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  orientation = mid-centered
+  x = -65
+  action = movebutton
+  y = 92
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  width = 130
+  action = resizebutton
+  height = 19
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\Gui\pause_menu\button.png
+  backgroundnormal = config\fancymenu\assets\Gui\pause_menu\blank.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_report_bugs_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=606306%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  orientation = mid-centered
+  x = -65
+  action = movebutton
+  y = -13
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  width = 130
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\Gui\pause_menu\button.png
+  backgroundnormal = config\fancymenu\assets\blank.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  action = setbuttondescription
+  description = Advancements
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  orientation = mid-centered
+  x = -65
+  action = movebutton
+  y = 35
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  width = 130
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  action = setbuttonlabel
+  value = Game Options
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\Gui\pause_menu\button.png
+  backgroundnormal = config\fancymenu\assets\Gui\pause_menu\blank.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  orientation = mid-centered
+  x = -65
+  action = movebutton
+  y = 59
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  width = 130
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\Gui\pause_menu\button.png
+  backgroundnormal = config\fancymenu\assets\Gui\pause_menu\blank.png
+}
+
+customization {
+  path = config/fancymenu/assets/Gui/pause_menu/bg.png
+  orientation = top-centered
+  x = -65
+  width = 130
+  action = addtexture
+  actionid = 6387b278-9bc2-4bd9-90e8-6fb83ad3b8f51661692441513
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config\fancymenu\assets\ghh.png
+  description = Opens a web brower tab%n%to our GitHub tracker page.
+  label = 
+  loopbackgroundanimations = true
+  x = 7
+  width = 15
+  actionid = 2d143644-5144-429f-8c1e-1e5b98e096bf1632061775185
+  action = addbutton
+  y = -21
+  backgroundnormal = config\fancymenu\assets\gh.png
+  value = https://github.com/AMPZNetwork/All-The-Fabric-3/issues
+  height = 15
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config\fancymenu\assets\cfh.png
+  description = More Packs
+  label = 
+  loopbackgroundanimations = true
+  x = 26
+  width = 15
+  actionid = dd40b35c-7cb3-411c-a4e5-62ab1a253c341632061775187
+  action = addbutton
+  y = -21
+  backgroundnormal = config\fancymenu\assets\cf.png
+  value = https://www.curseforge.com/members/teamampz/projects
+  height = 15
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config\fancymenu\assets\Gui\pause_menu\button.png
+  description = Got a Suggestion?%n%Post it over at our suggestion page.
+  label = Suggestions
+  loopbackgroundanimations = true
+  x = -65
+  width = 130
+  actionid = 414aca4f-0cbb-4f50-b603-e40a0d05e3f41632061775188
+  action = addbutton
+  y = 11
+  backgroundnormal = config\fancymenu\assets\Gui\pause_menu\blank.png
+  value = https://forums.ampznetwork.com/suggestions/category/16-all-the-fabric-3/
+  height = 20
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  backgroundhovered = config\fancymenu\assets\modsh.png
+  description = Mods (%loadedmods%) Installed
+  label = 
+  loopbackgroundanimations = true
+  x = 45
+  width = 15
+  actionid = 2d72e7ab-d1de-4e68-b72b-f2ad1b04d1d51632061775188
+  action = addbutton
+  y = -21
+  backgroundnormal = config\fancymenu\assets\mods.png
+  value = com.terraformersmc.modmenu.gui.ModsScreen
+  height = 15
+}
+
+customization {
+  path = config/fancymenu/assets/logo.png
+  orientation = mid-centered
+  x = -44
+  width = 95
+  action = addtexture
+  actionid = 427665fb-9004-48d9-9e72-28be562135321661692571938
+  y = -116
+  height = 55
+}
+

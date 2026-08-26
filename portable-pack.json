@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "minecraftVersion": "1.18.2",
+  "loader": {
+    "type": "fabric",
+    "version": "0.14.10"
+  },
+  "clientJar": "minecraft-1.18.2-client.jar"
+}

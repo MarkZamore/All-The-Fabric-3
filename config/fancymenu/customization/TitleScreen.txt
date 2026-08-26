@@ -1,0 +1,460 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_442
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/assets/bg.png
+  action = texturizebackground
+}
+
+customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
+  baseheight = 1080
+  action = autoscale
+  basewidth = 1920
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  orientation = bottom-left
+  x = 0
+  action = movebutton
+  y = -10
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = -61
+  action = movebutton
+  y = 0
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 122
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/mph.png
+  backgroundnormal = config/fancymenu/assets/mp.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-centered
+  x = -60
+  action = movebutton
+  y = 27
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 122
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/optionsh.png
+  backgroundnormal = config/fancymenu/assets/options.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = mid-centered
+  x = -61
+  action = movebutton
+  y = 54
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 122
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/quith.png
+  backgroundnormal = config/fancymenu/assets/quit.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -61
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 122
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/sph.png
+  backgroundnormal = config/fancymenu/assets/sp.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 165
+  action = deep_customization_element:title_screen_branding
+  actionid = 329ed738-1163-4b2d-a241-28376b7e5b021664358878440
+  y = 348
+  height = 10
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 438
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 7a961623-a5d0-43d9-af1b-6dfe0e9009f51664358878443
+  y = 190
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 198
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 01260c3b-34d0-4da2-a1c3-bdf61539a9d31664358878443
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 62a335d9-7719-402a-b036-981b557ace0a1664358878443
+  y = 0
+  height = 30
+}
+
+customization {
+  path = config/fancymenu/assets/logo.png
+  orientation = mid-centered
+  x = -69
+  width = 137
+  action = addtexture
+  actionid = be0672e7-4137-4745-8ac3-ebc191fe5ff81631983292533
+  y = -134
+  height = 76
+}
+
+customization {
+  orientation = bottom-centered
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/affliateh.png
+  label = 
+  loopbackgroundanimations = true
+  x = -61
+  width = 122
+  actionid = 75949a19-9fae-4ecb-9c2b-47a23fb6ed111631984814023
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/affiliate.png
+  value = https://bisecthosting.com/ampz
+  height = 20
+}
+
+customization {
+  orientation = bottom-centered
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  backgroundhovered = config/fancymenu/assets/volumeh.png
+  label = 
+  loopbackgroundanimations = true
+  x = -86
+  width = 20
+  actionid = 6466b8aa-46e3-433d-bd9c-9aef2a149abe1631984814024
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/volume.png
+  value = net.minecraft.class_443
+  height = 20
+}
+
+customization {
+  orientation = bottom-centered
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  backgroundhovered = config/fancymenu/assets/modsh.png
+  label = 
+  loopbackgroundanimations = true
+  x = 66
+  width = 20
+  actionid = 970089ff-3ace-4640-8949-d41d274ed8d81631984814025
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/mods.png
+  value = com.terraformersmc.modmenu.gui.ModsScreen
+  height = 20
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/ghh.png
+  label = 
+  loopbackgroundanimations = true
+  x = 14
+  width = 20
+  actionid = 882c3e16-fcda-4066-9de1-8af5dfe2770a1631984814026
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/gh.png
+  value = https://github.com/AMPZNetwork/
+  height = 20
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/fbh.png
+  label = 
+  loopbackgroundanimations = true
+  x = 38
+  width = 20
+  actionid = 8da9e9e6-73ae-44d3-9653-214e5bc795891631984814028
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/fb.png
+  value = https://www.facebook.com/AMPZNETWORK
+  height = 20
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/twitterh.png
+  label = 
+  loopbackgroundanimations = true
+  x = 63
+  width = 20
+  actionid = a1ba32d5-ff2f-4fc9-bfef-ff6b8b5e049c1631984814029
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/twitter.png
+  value = https://twitter.com/AMPZNETWORK
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/storeh.png
+  label = 
+  loopbackgroundanimations = true
+  x = -34
+  width = 20
+  actionid = 8847f2d6-b26f-42d7-b69f-0bb9d42ab3331631984814030
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/store.png
+  value = https://forums.ampznetwork.com/store/
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/forumsh.png
+  label = 
+  loopbackgroundanimations = true
+  x = -59
+  width = 20
+  actionid = 61456f41-46f4-41a3-9190-24d09283bbee1631984814032
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/forums.png
+  value = https://forums.ampznetwork.com/
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/cfh.png
+  label = 
+  loopbackgroundanimations = true
+  x = -84
+  width = 20
+  actionid = 18f71f3f-4a97-459d-91ec-ca994a0d53c81631984814033
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/cf.png
+  value = https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/discordh.png
+  label = 
+  loopbackgroundanimations = true
+  x = -109
+  width = 20
+  actionid = d627c535-2026-453a-a15f-a6ce58fc99231631984814034
+  action = addbutton
+  y = -40
+  backgroundnormal = config/fancymenu/assets/discord.png
+  value = https://discord.com/invite/enrpMDd
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config/fancymenu/assets/blank.png
+  description = Click to view%n%patch notes
+  label = Client v6
+  loopbackgroundanimations = true
+  hoverlabel = &nClient v6
+  x = -49
+  width = 49
+  actionid = 8a12e225-4851-4fdf-8753-8712c667510b1633194408479
+  action = addbutton
+  y = -10
+  backgroundnormal = config/fancymenu/assets/blank.png
+  value = https://github.com/AMPZNetwork/All-The-Fabric-3/blob/main/CHANGELOGS.md
+  height = 10
+}
+
+customization {
+  orientation = mid-centered
+  basecolor = #ffff00
+  shadow = true
+  splashfilepath = config/fancymenu/assets/splash.tips.txt
+  rotation = -20.0
+  scale = 0.8
+  refresh = true
+  bouncing = true
+  vanilla-like = false
+  x = 45
+  actionid = bfc88a03-8b64-4fb8-8eab-029d1524fd391654891991912
+  action = addsplash
+  y = -68
+}
+
+customization {
+  orientation = bottom-centered
+  enable_scrolling = false
+  shadow = false
+  scale = 1.0
+  source = https://cdn.ampznetwork.com/titlescreen_news/atfabric3
+  text_border = 0
+  case_mode = normal
+  source_mode = web
+  line_spacing = 1
+  x = -152
+  width = 305
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = cee27e44-420c-4e0d-8579-b7ef4876b45e1664358891804
+  y = -98
+  alignment = centered
+  height = 54
+}
+

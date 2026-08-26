@@ -1,0 +1,120 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = true
+  backgroundimage = config/drippyloadingscreen/assets/bg.png
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  visible = false
+  action = editlogo
+}
+
+customization {
+  action = editprogressbar
+  y = -46
+}
+
+customization {
+  orientation = bottom-right
+  shadow = false
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = 34d83ac5-fef2-48e9-a87c-6c814f4813961629892539801
+  y = -2
+  scale = 0.5
+  alignment = left
+  value = Minecraft %mcversion% / Fabric %version:fabric%
+}
+
+customization {
+  orientation = top-centered
+  shadow = false
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = 73e19953-e699-456a-96da-fe7d93e9626f1638732142079
+  y = 13
+  scale = 0.7
+  alignment = left
+  value = Memory Used / Total
+}
+
+customization {
+  orientation = top-centered
+  shadow = false
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = 0675b77c-4124-485d-aa6b-0c026cd112eb1638732242699
+  y = 21
+  scale = 0.6
+  alignment = left
+  value = %usedram%/%maxram%MB
+}
+
+customization {
+  orientation = bottom-centered
+  shadow = false
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = 914a2a51-4daf-4ff8-9c74-d3a08f1f57de1638732480952
+  y = -59
+  scale = 0.8
+  alignment = left
+  value = %loadingprogress%%
+}
+
+customization {
+  path = config/drippyloadingscreen/assets/mojangstudios.png
+  orientation = mid-centered
+  x = -80
+  width = 175
+  action = addtexture
+  actionid = 23f97490-a619-4071-b248-71b0fc6a46cd1650797545720
+  y = 1
+  height = 57
+}
+
+customization {
+  orientation = mid-centered
+  shape = rectangle
+  color = #ffffff
+  x = 0
+  width = 1
+  action = addshape
+  actionid = 00f76cd3-ba29-4337-becd-c1ba1be9b21b1650797622817
+  y = 0
+  height = 68
+}
+
+customization {
+  path = config/drippyloadingscreen/assets/logo.png
+  orientation = mid-centered
+  x = 51
+  width = 175
+  action = addtexture
+  actionid = 93e437cc-74c4-4c88-abda-556269cf86b21650798741997
+  y = 1
+  height = 57
+}
+
+customization {
+  orientation = bottom-right
+  shadow = false
+  x = -1
+  textcolor = #ffffff
+  action = addtext
+  actionid = 7f30bded-d3ef-4e7d-8fb0-32959bc3f2131662750712597
+  y = -9
+  scale = 0.5
+  alignment = left
+  value = Java %javaversion%
+}
+

@@ -1,0 +1,74 @@
+type = customizablemenus
+
+net.minecraft.class_526 {
+}
+
+net.minecraft.class_4749 {
+}
+
+net.minecraft.class_500 {
+}
+
+net.minecraft.class_525 {
+}
+
+net.minecraft.class_3928 {
+}
+
+net.minecraft.class_4749 {
+}
+
+net.minecraft.class_4749 {
+}
+
+net.minecraft.class_412 {
+}
+
+net.minecraft.class_419 {
+}
+
+net.minecraft.class_242 {
+}
+
+net.minecraft.class_424 {
+}
+
+net.minecraft.class_435 {
+}
+
+net.minecraft.class_434 {
+}
+
+net.minecraft.class_5235 {
+}
+
+net.minecraft.class_422 {
+}
+
+net.minecraft.class_433 {
+}
+
+xaero.common.gui.GuiWidgetUpdateAll {
+}
+
+net.minecraft.class_410 {
+}
+
+net.minecraft.class_420 {
+}
+
+net.minecraft.class_5346 {
+}
+
+fudge.notenoughcrashes.gui.InitErrorScreen {
+}
+
+ru.bclib.gui.screens.ConfirmFixScreen {
+}
+
+net.minecraft.class_442 {
+}
+
+io.github.cottonmc.cotton.gui.client.CottonInventoryScreen {
+}
+

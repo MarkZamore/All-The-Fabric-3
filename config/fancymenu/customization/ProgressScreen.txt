@@ -1,0 +1,11 @@
+type = menu
+
+customization-meta {
+  identifier = ru.bclib.gui.screens.ProgressScreen
+  renderorder = foreground
+}
+
+customization {
+  path = config/fancymenu/assets/Gui/Loading_Screen/world_screen.png
+  action = texturizebackground
+}

@@ -1,0 +1,90 @@
+[general]
+	#Enable/Disable Serverside Overrides
+	enabled = true
+	#Internal Version Number. NO TOUCHY!
+	version = 2
+
+#The Multi Player Event
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Connected to %servername%"
+	#The second line of text under the app name
+	state = "%players%/%maxplayers% Players Online"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "%servericon%"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "❌ Unofficial Server"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "pack-logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Modpack by TeamAMPZ"
+	#The buttons to display on Discord
+	[[multi_player.buttons]]
+		label = "Discord"
+		url = "https://discord.gg/enrpMDd"
+	[[multi_player.buttons]]
+		label = "Download"
+		url = "https://www.curseforge.com/minecraft/modpacks/all-the-fabric-3"
+	
+
+#Dimension Information Overrides
+[dimension_overrides]
+	#Allows you to override the displayed values for dimensions
+	enabled = true
+
+	#The Dimensions to override
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "Exploring: Overworld"
+		state = "Biome: %biome%"
+		largeImageKey = "overworld"
+		largeImageText = "Difficulty: %difficulty% Mode"
+		smallImageKey = "pack-logo"
+		smallImageText = "All The Fabric 3 - %mcver%"
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "Exploring: %world%"
+		state = "Biome: %biome%"
+		largeImageKey = "the_nether"
+		largeImageText = "Difficulty: %difficulty% Mode"
+		smallImageKey = "pack-logo"
+		smallImageText = "All The Fabric 3 - %mcver%"
+
+	[[dimension_overrides.dimensions]]
+		name = "end_island"
+		description = "Exploring: %world%"
+		state = "Biome: %biome%"
+		largeImageKey = "end_island"
+		largeImageText = "Difficulty: %difficulty% Mode"
+		smallImageKey = "pack-logo"
+		smallImageText = "All The Fabric 3 - %mcver%"
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "Exploring: %world%"
+		state = "Biome: %biome%"
+		largeImageKey = "the_end"
+		largeImageText = "Difficulty: %difficulty% Mode"
+		smallImageKey = "pack-logo"
+		smallImageText = "All The Fabric 3 - %mcver%"
+
+	[[dimension_overrides.dimensions]]
+		name = "the_aether"
+		description = "Dimension %world%"
+		state = "Biome: %biome%"
+		largeImageKey = "the_aether_reborn"
+		largeImageText = "%mods% mods installed"
+		smallImageKey = "pack-logo"
+		smallImageText = "By TeamAMPZ"
+
+	[[dimension_overrides.dimensions]]
+		name = "twilight_forest"
+		description = "Exploring: %world%"
+		state = "Biome: %biome%"
+		largeImageKey = "twilight_forest"
+		largeImageText = "Difficulty: %difficulty% Mode"
+		smallImageKey = "pack-logo"
+		smallImageText = "All The Fabric 3 - %mcver%"

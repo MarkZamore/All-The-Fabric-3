@@ -1,0 +1,31 @@
+# The settings this pack wants to be met with, for the machine it is meant for.
+#
+# Written into an instance that does not have them yet, and only those. The
+# game writes back every option it knows the first time it saves, so after one
+# session nothing here can change anything: what somebody sets is theirs, and
+# these are a starting point rather than a correction.
+
+# Six chunks drawn, five ticking. The gap is deliberate: the world stays alive
+# a little further out than it is drawn, which keeps farms running and mobs
+# behaving just past the edge of sight.
+renderDistance:6
+simulationDistance:5
+
+# Fast graphics, and smooth lighting off. On 1.18.2 that second one is still a
+# number rather than a switch - 0 off, 1 minimum, 2 maximum - which is why it
+# does not read like the same setting in a newer pack's file. Writing "false"
+# here would be a line the game does not understand.
+graphicsMode:0
+ao:0
+
+# Minimal particles, no entity shadows, entities drawn to three quarters of
+# the usual distance.
+particles:2
+entityShadows:false
+entityDistanceScaling:0.75
+
+# No mipmaps and the narrowest biome blend that still looks like a border
+# rather than a seam. Both are texture memory, which is the scarcest thing on
+# a machine with no card of its own.
+mipmapLevels:0
+biomeBlendRadius:1

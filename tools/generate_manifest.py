@@ -280,7 +280,8 @@ def generate(pack: Path, out: Path, revision: str) -> None:
 
     manifest = {
         "schemaVersion": 1,
-        "packId": "LL8",
+        # This pack, and not the one this script was copied from: the same short name the publish workflow uses
+        "packId": "ATF3",
         "revision": revision,
         "generatedAtUtc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "minecraftVersion": portable.get("minecraftVersion"),

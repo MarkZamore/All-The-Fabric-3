@@ -1,0 +1,16 @@
+# Every resource pack this build decides, and the order it belongs in.
+#
+# A later line sits above an earlier one where two packs redraw the same thing.
+# "file/" is a pack shipped as a file in resourcepacks/.
+#
+# The list is applied once to an instance and then belongs to the player: it
+# carries its own hash, so a changed list applies again and an unchanged one
+# never argues with a choice somebody made afterwards.
+
+# Twilight Forest ships a Russian translation that Gson refuses: the last live
+# entry ends on a comma and everything after it to the closing brace is
+# commented out, so the parser meets the brace where it wants another name and
+# skips the file whole. Every Twilight Forest string then falls back to English
+# in the middle of an otherwise Russian game. One comma removed; nothing else
+# about the file is touched, and it is the mod's own text.
+file/ATF3 Text Fixes.zip

@@ -29,3 +29,15 @@ entityDistanceScaling:0.75
 # a machine with no card of its own.
 mipmapLevels:0
 biomeBlendRadius:1
+
+# The game opens in Russian.
+#
+# Minecraft's own default is en_us, so an instance came up in English and sat
+# there until somebody went looking for the setting - on a build whose quests,
+# items and tooltips are translated.
+#
+# Seeded and not held. A language is exactly the kind of thing a player may
+# want otherwise, and the ! mark would put this back at every launch and argue
+# with them about it. After the first session the key exists and this line can
+# never change it again.
+lang:ru_ru
